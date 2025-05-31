@@ -23,7 +23,7 @@ export const TodoList: React.FC<Props> = ({ query, status }) => {
 
   return (
     <>
-      {todos.length === 0 ? (<p className="notification is-warning">
+      {filteredTodos.length === 0 ? (<p className="notification is-warning">
         There are no todos matching current filter criteria
       </p>) : (
       <table className="table is-narrow is-fullwidth">
